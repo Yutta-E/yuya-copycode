@@ -1,0 +1,380 @@
+
+
+
+html{
+  font-size: 62.5%;
+}
+body{
+ margin: 0;
+}
+p{
+  font-size: 1.6em;
+  line-height: 1.8;
+  letter-spacing: 0.7px;
+  margin: 0;
+}
+
+ul{
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+img{
+  vertical-align: bottom;
+}
+.background-adjust{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.background-adjustin{
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+.fab{
+  font-size: 30px;
+}
+.fa-facebook-square{
+  color: #3C5A99;
+}
+.fa-facebook-square:before{
+  padding: 11px;
+}
+.fa-twitter-square{
+  color: #38A1F2;
+}
+.fa-twitter-square:before{
+  padding: 11px;
+}
+.fa-linkedin{
+  color: #2573B2;
+}
+.fa-linkedin:before{
+  padding: 11px;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ------ ヘッダー -------- */
+.header-navi{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin-bottom: 70px;
+  padding-top: 10px;
+}
+.header-navi .logo a{
+  font-size: 40px;
+  color: blue;
+  padding-left: 55px;
+  font-weight: bold;
+}
+#NRI:hover{
+  text-decoration: none;
+}
+.navibox{
+  display: flex;
+
+}
+.navibox i{
+  font-size: 26px;
+  color: blue;
+}
+.navibox li{
+  width: 60px;
+  height: 60px;
+}
+.top-wrapper{
+  position: relative;
+}
+.top-wrapper img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.top-text p{
+  font-size: 20px;
+}
+.top-text h1{
+  font-size: 28px;
+  padding-top: 35px;
+}
+.top-text p,h1{
+  color: white;
+  position: absolute;
+  top: 45px;
+  left: 160px;
+  display: block;
+}
+.topic-path{
+  color: #CCCCCC;
+}
+.topic-path a{
+  font-size: 12px;
+  color: #CCCCCC;
+}
+.topic-path a:hover{
+  text-decoration: none;
+}
+.sns-share{
+  padding-top: 25px;
+}
+.sns-share ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.sns-share #share{
+  font-size: 9px;
+  color: #666666;
+  padding-right: 10px;
+}
+/*-------------  メイン ------------*/
+.main-wrapper img{
+  width: 100%;
+}
+.main-wrapper h2{
+  font-size: 22px;
+  padding: 0 0 20px;
+  margin: 0 0 0 32px;
+}
+.main-wrapper p{
+  margin-top: 19px;
+}
+.btn{
+  text-align: center;
+}
+.main-wrapper img{
+  margin-bottom: 20px;
+}
+.main-wrapper .bluebtn{
+  display: inline-block;
+  font-size: 1.6em;
+  color: white;
+  background-color: #145BAC;
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+}
+
+/*  DX取り組み事例   */
+
+.article-box p{
+  font-size: 14px;
+}
+.article-box ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-box li{
+  padding: 0 10px;
+  width: 22%;
+}
+.article-box #journal{
+  background-color: #145BAC;
+  color: white;
+  padding: 2px 0 1px 6px;
+}
+.article-box img{
+
+}
+.article-box .minibox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-box .minibox li{
+  display: block;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  padding: 6px 9px;
+  margin: 3px;
+  height: auto;
+  font-size: 12px;
+  text-align: center;
+}
+.flex-grow{
+  flex-grow: 1;
+}
+.flex-grow2{
+
+  flex-grow: 2;
+}
+.width-navi{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.width-navi a{
+  color: #0C419A;
+}
+.width-navi .fa-angle-right{
+  color: #666666;
+  padding-left: 5px;
+}
+.width-navi .fa-angle-left{
+  color: #666666;
+  padding-right: 5px;
+}
+/* ----  NRIの強み ------  */
+
+.listbox{
+  background-color: #DEECF8;
+  font-size: 16px;
+  padding: 20px;
+}
+.listbox h3{
+  font-size: 14px;
+}
+.listbox ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.listbox li{
+  border: 1px solid #CCCCCC;
+  font-size: 16px;
+  padding: 16px 15px 15px;
+  margin: 0 10px 20px;
+  width: 26%;
+  text-align: center;
+  background-color: #FFF;
+  position: relative;
+}
+.listbox a{
+  color: #0C419A;
+}
+.listbox .fa-angle-right:before{
+  color: #666666;
+  position: absolute;
+  font-size: 12px;
+  top: 27px;
+  left: 6px;
+}
+
+/* ------ 企業情報  --------  */
+.footer-navitop{
+  color: #333333;
+}
+.footer-navitop .list{
+  padding-bottom: 30px;
+}
+.footer-navitop h2{
+  font-size: 20px;
+  padding: 40px 0 30px;
+  border-top: 2px solid black;
+
+}
+.footer-navitop .list p{
+  font-size: 16px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-top: 1px dotted black;
+}
+.footer-navitop .list ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-navitop li{
+  padding: 13px 8px;
+  width: calc(23%);
+}
+.footer-navitop i{
+  color: #666666;
+  padding-right: 10px;
+}
+.footer-navitop .list  li a{
+  font-size: 14px;
+  color: #0C419A;
+}
+.footer-navitop .list li a:hover{
+  text-decoration: underline;
+}
+#pagetop{
+  margin-bottom: 50px;
+}
+#pagetop a{
+  color: #0C419A;
+}
+#pagetop a:hover{
+  text-decoration: underline;
+}
+/* ----------- follow us -----------  */
+.margin{
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999;
+  padding: 30px 0;
+}
+.margin ul{
+  display: flex;
+  justify-content: center;
+}
+.margin li p{
+  color: #0C419A;
+  text-align: center;
+  font-weight: bold;
+  padding-right: 10px;
+}
+/* ------  ナレッジインサイト  ------ */
+.footer-navibottom{
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-navibottom #title {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  font-size: 16px;
+  padding: 12px 0px;
+}
+/* footerlist */
+.footerlist .detail{
+  padding-top:11px;
+}
+.footerlist{
+  width: 24%;
+  padding-bottom: 25px;
+  padding-right: 9px;
+}
+.footerlist .detail li{
+  padding: 12px 0;
+  margin: px;
+}
+.footer-navibottom .footerlist li a{
+  color: #666666;
+  font-size: 14px;
+  padding: 0px;
+}
+.footerlist .fa-angle-right{
+  font-size: 5px;
+  padding-right: 1px;
+}
+/* ------ pagebottom ------- */
+
+.pagebottom ul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.pagebottom li{
+  border-right: 1px solid #999999;
+  padding: 0 15px;
+}
+.pagebottom a{
+  color: #999999;
+}
+#no-border{
+  border-right: 1px solid #FFFFFF;
+}
+#copyright{
+  font-size: 10px;
+}
