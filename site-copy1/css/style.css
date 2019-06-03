@@ -1,0 +1,566 @@
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+body{
+  margin: 0;
+}
+.fab{
+  font-size: 30px;
+  padding: 0 10px;
+}
+/* ------------  メイン ---------*/
+.header-top h2{
+  float:left;
+  font-size: 12px;
+}
+.header-top ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-top {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    line-height: 17px;
+
+}
+.header-top ul li {
+  border-right: 1px solid #676767;
+  padding: 5px 15px 3px;
+  letter-spacing: 0.1em;
+  display: block;
+}
+#graduation{
+  border-right: 1px solid #F7F7F7;
+}
+.header-top a{
+  color: #676767;
+}
+.header-top ul li :hover{
+  text-decoration: underline;
+
+}
+.header-top .btn {
+  background-color: #D9D9D9;
+  padding: 5px 15px 3px;
+}
+.header-top .btn a{
+  color: #000080;
+}
+.header-main{
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.clearfix::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.clearfix::before{
+  content:"";
+  display: block;
+  clear: both;
+}
+.header-logo {
+ float: left;
+}
+.header-contact{
+  float: right;
+  margin-top: 10px;
+}
+.contact-bottom{
+  vertical-align: baseline;
+}
+
+.contact-btn {
+  float: right;
+}
+.contact-btn .button {
+  color: navy;
+  border: 1px solid navy;
+  padding: 10px 20px;
+  margin: 7px;
+  display: inline-block;
+  float: right;
+}
+.contact-btn a:hover{
+  color: white;
+  background-color: navy;
+}
+.header-nav{
+  text-align: center;
+}
+.header-nav .nav-item{
+  margin: 0 40px;
+}
+.nav-item:hover{
+  opacity: 0.8;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.header-nav ul li h2{
+  color: black;
+  font-size: 15px;
+}
+.header-nav ul li p{
+  color: #CCCCCC;
+  font-size: 12px;
+}
+.header-nav li :hover{
+  color: navy;
+}
+.localNavi{
+  background-color: #1f286f;
+  width: 100%;
+  height: 90px;
+  display: flex;
+}
+.localNavi ul{
+  max-width: 1060px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+  padding-right: 10px;
+
+}
+.localNavi ul li a{
+  color: white;
+  margin: 10px;
+  padding: 7px;
+}
+.localNavi ul li a:hover{
+  background-color: white;
+  color: #1f286f;
+}
+#top-wrapper{
+   max-width: 1060px;
+   margin: 0 auto;
+ }
+.contents-item{
+  background-image: url("../images/about_mainimage01.jpg");
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  padding: 50px 0px 10px;
+  background-size: cover;
+}
+.contents-item h1{
+  color: white;
+  letter-spacing: 10px;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  font-size: 52px;
+}
+.topicPath{
+  border-bottom: 1px solid #CCCCCC;
+  padding: 10px;
+}
+.topicPath p{
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.titleTopic{
+  text-align: center;
+  padding: 50px 0;
+}
+.titleTopic .articleTop{
+  font-size: 33px;
+  letter-spacing: 0.2em;
+  margin-bottom: 70px;
+}
+.titleTopic .articleMiddle{
+  font-size: 22px;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 18px;
+  margin-bottom: 25px;
+}
+.contents-box1 .contents-aboutList {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.contents-box1 .title{
+  font-size: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+.contents-box1 .contents-aboutList li {
+  font-size: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 0.6px;
+}
+.contents-box1 .contents-aboutList span{
+  font-weight: lighter;
+}
+/* ---------------   N STANDARD  ---------------  */
+.contents-aboutBox{
+  border: 1px solid #CCCCCC;
+  padding: 30px 40px;
+  width: 687px;
+  height: 327px;
+  margin:0 auto;
+  background-color: #F7F7F7;
+}
+.contents-aboutBox .contents-aboutBox-A {
+  float: left;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+.contents-aboutBox .contents-aboutBox-B{
+  overflow: hidden;
+  letter-spacing: 0.3em;
+  padding-left: 8px;
+}
+.contents-aboutBox .contents-aboutBox-B h3 {
+  font-size: 22px;
+}
+.contents-aboutBox .contents-aboutBox-B p{
+  font-size: 16px;
+}
+.contents-aboutBox .contents-aboutBox-B .more {
+  background-image: url("../images/icon_arrow01_right_black01.png");
+  background-repeat: no-repeat;
+  background-size: 10px 15px;
+  background-position: left;
+}
+.contents-aboutBox .contents-aboutBox-B img{
+  padding-left: 20px;
+  padding-top: 6px;
+}
+.contents-aboutBox:hover{
+  opacity: 0.7;
+}
+.contents-box2 .title{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+
+}
+.box{
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.contents-aboutBox-C{
+  overflow: hidden;
+}
+.box .contents-aboutBox-C h2{
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+.contents-aboutBox-C .explain{
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 10px;
+}
+
+/* -----------------  高卒資格のためのBasic Program  ------------------  */
+.gray{
+  background-color: #F7F7F7;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  margin-top: 70px;
+}
+.white{
+  padding-top: 40px;
+  margin-top: 70px;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1060px;
+}
+.wrapper-title{
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.wrapper-title h1{
+  border-bottom: 1px solid black;
+  display: inline-block;
+  font-size: 33px;
+}
+.main-wrapper-text:hover{
+  opacity: 0.7;
+}
+.main-wrapper-text h2{
+  letter-spacing: 0.6px;
+}
+
+.fa-angle-right:before{
+  font-size: 20px;
+  margin-right: 11px;
+}
+.main-wrapperTop{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-wrapperTop .main-wrapper-text{
+  margin: 30px;
+}
+.main-wrapperTop .main-wrapper-text .expalin{
+  font-size: 11px;
+}
+.main-wrapper-text .black-logo{
+  background-color: black;
+  padding: 10px;
+}
+.main-wrapperBottom{
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+  padding-bottom: 20px;
+}
+.main-wrapperBottom .main-wrapper-img{
+  margin-left: 20px;
+}
+.main-wrapperBottom .main-wrapper-text{
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/*  --------------  メッセージ  ---------------  */
+.comentNavi{
+  background-color: #F7F7F7;
+}
+
+.down{
+  display: flex;
+  justify-content: center;
+}
+
+.comment{
+  width: 30%;
+  height: auto;
+  border: 1px dotted #CCCCCC;
+  background-color: #FFFFFF;
+  padding: 8px 42px 12px 26px;
+  margin: 30px;
+}
+.comment:hover{
+  opacity: 0.7;
+}
+/*------------------ youtube  -------------- */
+}
+.youtube{
+  margin: 0 40px;
+  padding: 70px 10px 1px;
+}
+.youtube ul{
+  display: flex;
+  justify-content: flex-start;
+}
+.youtube li{
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+/* -----------  N高についてさらに詳細を知りたい方はこちら -------  */
+.contact-black{
+  background-color:#1C1C1C;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.contact-black h2{
+  margin-bottom: 30px;
+  letter-spacing: 0.6px;
+}
+.contact-black p{
+  font-size: 12px;
+}
+.black{
+  display: flex;
+  justify-content: center;
+
+}
+.btns{
+}
+.btns li{
+  margin-bottom: 14px;
+
+}
+.btns li a{
+  display: block;
+  color: black;
+  background-color: white;
+  background-image: url("../images/icon_arrow01_right_black01.png");
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  font-size: 18px;
+  padding: 14px 64px 9px 18px;
+  margin-right: 44px;
+}
+.btns li :hover{
+  background-color: rgba(255,255,255,0.7);
+}
+.btns li:first-child  a i:hover{
+  background-color: rgba(255,255,255,0.7);
+}
+.btns li a i{
+  display: inline-block;
+  width: 29px;
+  height: 27px;
+  margin: 0 16px 3px 0;
+  background-size: contain;
+  vertical-align: middle;
+}
+.btns li:first-child  a i{
+  background-image: url("../images/icon.book.png");
+}
+.btns li:nth-child(2n) a i{
+  background-image: url("../images/icon.balloon.png");
+}
+.btn-white{
+  color: white;
+  border: 1px solid white;
+  display: block;
+  width: 212px;
+  margin: 0 0 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+.btn-white:hover{
+  text-decoration: underline;
+}
+.pagetopNavi {
+  padding: 60px 10px 0;
+  margin: 0 44px;
+  position: relative;
+}
+.pagetopNavi ul{
+  display: flex;
+  justify-content: flex-start;
+  color: navy;
+
+}
+.pagetopNavi li{
+  margin: 0 0 0 12px;
+  padding: 0 12px 1px 12px;
+  border-right: 1px solid #CCCCCC;
+}
+.pagetopNavi a{
+  color:navy;
+}
+.pagetopNavi a:hover{
+  text-decoration: underline;
+}
+.pagetopNavi-img{
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+/* ---------------  アドバンストプログラム ----------------*/
+.detailNavi{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 40px;
+  padding: 60px 10px 0;
+  border-bottom: 1px solid #CCCCCC;
+  position: relative;
+}
+.detailNavi .navy a {
+  font-size: 16px;
+  color: navy;
+}
+.detailNavi .navy a:hover{
+  text-decoration: underline;
+}
+.detailNavi .extra{
+  font-size: 11px;
+  color: navy;
+  position: absolute;
+  left: 50px;
+  top: 45px;
+}
+.detailNavi  li{
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+.detailNavi  li :hover{
+  text-decoration: underline;
+}
+/* -------------  pageFoot  ----------------  */
+
+.pageFoot{
+  display: flex;
+  justify-content: space-between;
+
+}
+.left-nav{
+  display: flex;
+  font-size: 14px;
+  padding: 15px 0;
+}
+.left-nav #info{
+  padding:0 10px;
+}
+.right-nav{
+  display: flex;
+  font-size: 12px;
+}
+.snsbox{
+  display: flex;
+  border-right: 1px solid #CCCCCC;
+  height: 40px;
+}
+#border{
+  border-right: 1px solid white;
+}
+.official{
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.fa-facebook-square{
+  color: #3C5A99;
+  padding:0 10px;
+}
+
+.fa-twitter-square{
+  color: #38A1F2;
+}
+.fa-youtube-square{
+  color: red;
+}
+
+.snsbox .fas{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.snsbox:hover{
+  opacity: 0.8;
+}
+.right-nav li{
+  border-right: 1px solid #CCCCCC;
+}
+.pageBottom{
+  display: flex;
+  justify-content: space-between;
+  background-color: #191919;
+  padding: 0 40px;
+}
+.pageBottom p,.pageBottom a{
+  color: #999999;
+}
+.pageBottom a{
+}
