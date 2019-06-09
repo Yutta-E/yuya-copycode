@@ -60,38 +60,34 @@ img{
 .fa-linkedin:before{
   padding: 11px;
 }
-.clearfix::after{
-  content: "";
-  display: block;
-  clear: both;
-}
+
 /* ------ ヘッダー -------- */
 .header-navi{
   display: flex;
   justify-content: space-between;
   height: 60px;
   margin-bottom: 70px;
-  padding-top: 10px;
 }
-.header-navi .logo a{
-  font-size: 40px;
-  color: blue;
-  padding-left: 55px;
-  font-weight: bold;
-}
-#NRI:hover{
-  text-decoration: none;
+.logo img{
+  position: relative;
+  top: 15px;
+  left: 55px;
 }
 .navibox{
   display: flex;
-
-}
-.navibox i{
-  font-size: 26px;
-  color: blue;
 }
 .navibox li{
   width: 60px;
+  height: 60px;
+  position: relative;
+}
+.navibox #move{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.navibox #listlogo{
+  width: auto;
   height: 60px;
 }
 .top-wrapper{
@@ -145,10 +141,15 @@ img{
 .main-wrapper h2{
   font-size: 22px;
   padding: 0 0 20px;
-  margin: 0 0 0 32px;
 }
 .main-wrapper p{
   margin-top: 19px;
+}
+#heading-logo{
+  width: 22px;
+  height: 22px;
+  margin-bottom: 2px;
+  margin-right: 15px;
 }
 .btn{
   text-align: center;
@@ -165,6 +166,7 @@ img{
   margin: 40px;
   text-align: center;
 }
+
 
 /*  DX取り組み事例   */
 
@@ -184,9 +186,7 @@ img{
   color: white;
   padding: 2px 0 1px 6px;
 }
-.article-box img{
 
-}
 .article-box .minibox {
   display: flex;
   flex-wrap: wrap;
@@ -233,6 +233,7 @@ img{
 }
 .listbox h3{
   font-size: 14px;
+  padding-left: 30px;
 }
 .listbox ul{
   display: flex;
@@ -328,6 +329,7 @@ img{
 .footer-navibottom{
   margin: 50px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .footer-navibottom #title {
