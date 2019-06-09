@@ -340,7 +340,7 @@ header{
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-.wrapper-title h1{
+.wrapper-title h2{
   border-bottom: 1px solid black;
   display: inline-block;
   font-size: 33px;
@@ -348,8 +348,9 @@ header{
 .main-wrapper-text:hover{
   opacity: 0.7;
 }
-.main-wrapper-text h2{
+.main-wrapper-text h3{
   letter-spacing: 0.6px;
+  font-size: 22px;
 }
 
 .fa-angle-right:before{
