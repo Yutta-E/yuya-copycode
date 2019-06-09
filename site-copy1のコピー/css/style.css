@@ -5,17 +5,31 @@ a{
   text-decoration: none;
   color: black;
 }
-body{
-  margin: 0;
+html,body{
+  margin-top: -6px;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding:0;
 }
 .fab{
   font-size: 30px;
   padding: 0 10px;
 }
+.container{
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: 0 10px;
+}
 /* ------------  メイン ---------*/
+header{
+  padding:0;
+  margin:0;
+}
 .header-top h2{
   float:left;
   font-size: 12px;
+  line-height: 11px;
 }
 .header-top ul {
   display: flex;
@@ -26,12 +40,11 @@ body{
     width: 100%;
     height: 30px;
     font-size: 12px;
-    line-height: 17px;
-
 }
 .header-top ul li {
   border-right: 1px solid #676767;
   padding: 5px 15px 3px;
+  margin-top:2px;
   letter-spacing: 0.1em;
   display: block;
 }
@@ -52,10 +65,7 @@ body{
 .header-top .btn a{
   color: #000080;
 }
-.header-main{
-  max-width: 1060px;
-  margin: 0 auto;
-}
+
 .clearfix::after{
   content:"";
   display: block;
@@ -69,12 +79,27 @@ body{
 .header-logo {
  float: left;
 }
+.contact-top{
+  padding: 20px 0;
+}
 .header-contact{
   float: right;
   margin-top: 10px;
+  position: relative;
+}
+.call{
+  padding-right: 20px;
+}
+.header-contact p{
+  font-size: 11px;
+  color: #8D959C;
+  position: absolute;
+  top: 23px;
+  left: 74px;
 }
 .contact-bottom{
   vertical-align: baseline;
+  margin-bottom: 20px;
 }
 
 .contact-btn {
@@ -96,57 +121,64 @@ body{
   text-align: center;
 }
 .header-nav .nav-item{
-  margin: 0 40px;
+  margin: 0 0px;
 }
 .nav-item:hover{
   opacity: 0.8;
 }
-.header-nav ul {
+.header-nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
-.header-nav ul li h2{
+.header-nav #nav-item{
+  border-left: 1px solid #CCCCCC;
+  padding: 0 40px;
+  width: 171px;
+  height: 50px;
+}
+.header-nav h2{
   color: black;
   font-size: 15px;
+  line-height: 10px;
 }
-.header-nav ul li p{
+.header-nav  p{
   color: #CCCCCC;
   font-size: 12px;
+  line-height: 1px;
 }
-.header-nav li :hover{
+.header-nav a :hover{
   color: navy;
 }
 .localNavi{
   background-color: #1f286f;
   width: 100%;
-  height: 90px;
+  height: 100px;
   display: flex;
 }
 .localNavi ul{
-  max-width: 1060px;
-  margin: 0 auto;
   color: white;
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
   letter-spacing: 0.05em;
   margin-top: 20px;
-  padding-right: 10px;
-
+  padding-right: px;
 }
 .localNavi ul li a{
   color: white;
-  margin: 10px;
-  padding: 7px;
+  margin: 2px;
+  padding: 9px 9px;
+  line-height: 33px;
 }
 .localNavi ul li a:hover{
   background-color: white;
   color: #1f286f;
 }
-#top-wrapper{
-   max-width: 1060px;
-   margin: 0 auto;
- }
+.fa-slash{
+  color: #5C5C7E;
+}
+
+
 .contents-item{
   background-image: url("../images/about_mainimage01.jpg");
   width: 100%;
@@ -163,17 +195,23 @@ body{
   font-size: 52px;
 }
 .topicPath{
-  border-bottom: 1px solid #CCCCCC;
-  padding: 10px;
+  font-size: 14px;
 }
-.topicPath p{
-  max-width: 1060px;
-  margin: 0 auto;
+#topicPath-underline{
+  border-bottom: 1px solid #CCCCCC;
+  padding: 0 10px;
+}
+#topicPath-underline a:hover{
+  text-decoration: underline;
 }
 .titleTopic{
   text-align: center;
   padding: 50px 0;
 }
+#likeBlue{
+  color:#36538D;
+}
+
 .titleTopic .articleTop{
   font-size: 33px;
   letter-spacing: 0.2em;
@@ -191,7 +229,19 @@ body{
   justify-content: flex-start;
   margin-bottom: 50px;
 }
+.contents-aboutList span{
+  font-size: 24px;
+  border-right: 1px solid black;
+  margin: 0 15px 0 0;
+  padding: 5px 15px 5px 0;
+  text-align: center;
+}
+.contents-aboutList-A li{
 
+}
+.contents-aboutList-A ul{
+  padding-left: -40px;
+}
 .contents-box1 .title{
   font-size: 20px;
   margin-bottom: 30px;
@@ -282,10 +332,7 @@ body{
   padding-top: 40px;
   margin-top: 70px;
 }
-.container{
-  margin: 0 auto;
-  max-width: 1060px;
-}
+
 .wrapper-title{
   text-align: center;
   padding-top: 20px;
@@ -317,7 +364,7 @@ body{
 .main-wrapperTop .main-wrapper-text{
   margin: 30px;
 }
-.main-wrapperTop .main-wrapper-text .expalin{
+.main-wrapper-text .explain{
   font-size: 11px;
 }
 .main-wrapper-text .black-logo{
@@ -343,18 +390,32 @@ body{
   background-color: #F7F7F7;
 }
 
-.down{
+.updown{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-
+.slashbox{
+  background-image: url("../images/slash.png");
+  position: relative;
+  margin: 10px;
+}
 .comment{
-  width: 30%;
-  height: auto;
-  border: 1px dotted #CCCCCC;
-  background-color: #FFFFFF;
-  padding: 8px 42px 12px 26px;
-  margin: 30px;
+  width: 477px;
+  height: 133px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  background-color: white;
+}
+.comment h3{
+  font-size: 25px;
+}
+.comment p{
+  font-size: 14px;
+}
+.comment i{
+  position: absolute;
+  top: 75px;
+  right: 10px;
 }
 .comment:hover{
   opacity: 0.7;
@@ -442,6 +503,53 @@ body{
 .btn-white:hover{
   text-decoration: underline;
 }
+/* -------- N高以外の学びの場 --------- */
+#school{
+ margin-top: 50px;
+}
+#school h3{
+  text-align: center;
+  font-size: 16px;
+}
+.another-school{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+#njr:hover{
+  opacity: 0.7;
+}
+#njr{
+  background-color: white;
+  width: 456px;
+  height: 80px;
+  padding: 12px;
+  position: absolute;
+  left: 9px;
+  top: 13px;
+}
+#njr p{
+  position:absolute;
+  font-size: 14px;
+  top: 54px;
+  left: 38px;
+}
+#njr i{
+  position: absolute;
+  top: 44px;
+  right: 13px;
+}
+#center{
+  text-align: center;
+}
+.slash{
+  background-image: url("../images/slash.png");
+  width: 500px;
+  height:130px;
+  position: relative;
+}
+
+
 .pagetopNavi {
   padding: 60px 10px 0;
   margin: 0 44px;
@@ -501,11 +609,9 @@ body{
   text-decoration: underline;
 }
 /* -------------  pageFoot  ----------------  */
-
 .pageFoot{
   display: flex;
   justify-content: space-between;
-
 }
 .left-nav{
   display: flex;
